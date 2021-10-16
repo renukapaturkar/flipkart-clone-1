@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import { ProductListing } from './components/ProductListing';
+import { SortBy } from './components/SortBy';
+import { Filters } from './components/Filters';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <h1 className="bg-blue-500 h-12 font-bold text-white p-2">Flipkart Clone</h1>
+    <SortBy/>
+    <div className="flex p-4">
+      <Filters/>
+      <ProductListing/>
     </div>
+    </>
   );
 }
 
